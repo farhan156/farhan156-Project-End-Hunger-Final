@@ -1,0 +1,154 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcf2f1;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Ensure navbar is above the gradient */
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #0f1035;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    /* Your active link styles */
+    color: #365486; /* Change to your desired color */
+    font-weight: bold; /* Optionally, make the text bold */
+}
+
+
+.navbar a:hover {
+    color: #365486;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 0px;
+    margin-right: 20px;
+    float: left;
+    border: 1px grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(123, 194, 222);
+    height: 900px;
+    width: 700px;
+    padding:20px;
+    padding-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font:bold;
+}
+
+textarea{
+    resize: none;
+}
+
+
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    padding: 10px;
+    background-color: rgb(170, 236, 243);
+    
+}
+
+.Button {
+    color: #101010;
+    border-radius: 40px;
+    transition: .4s;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+.Button :hover {
+    background-color: #365486;
+    cursor: pointer;
+    color: #dcf2f1;
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.4));
+}
+
+#error-message {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    color: #dcf2f1;
+    position: relative; /* Change position to fixed */
+    bottom: 0;
+    width: 100%;
+    background-color: #0f1035;
+    padding: 10px 0;
+    z-index: 1; /* Set a lower z-index value */
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #96bdff;
+    text-decoration: underline;
+}
+
+#cartTotal{
+    font-size: 20px;
+    font-weight: bold;
+}
+

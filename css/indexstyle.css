@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcf2f1;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #0f1035;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    color: #365486; 
+    font-weight: bold; 
+}
+
+
+.navbar a:hover {
+    color: #365486;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 0px;
+    margin-right: 20px;
+    float: left;
+    border: 1px grey;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    height: auto;
+    margin-bottom: -7px;
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: auto;
+    z-index: 3;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.6));
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 43%;
+    left: 9.5%;
+    color: #ffffff; 
+    z-index: 3;
+    padding: 100px 0px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 85px;
+}
+
+
+.mission{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #365486;
+    
+}
+
+.mission img{
+    height: auto;
+    width: 430px;
+}
+
+.missionText{
+    width: 550px;
+
+} 
+
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.missionText h2{
+    margin-top: 0px;
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #dcf2f1;
+}
+
+.missionText p{
+    color: #ffffff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.button {
+    background-color: #0f1035;
+    color: #dcf2f1;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 13px 22px;
+    border-radius: 40px;
+    transition: .4s;
+}
+
+.button:hover {
+    background-color: #365486;
+    cursor: pointer;
+}
+
+
+
+.card img{
+    width: 75%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.service{
+    background: #dcf2f1;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.service h2{
+    margin-top: 0;
+}
+
+.title h2{
+    color: #0f1035;
+    font-size: 65px;
+    width: 1130px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 320px;
+    width: 280px;
+    padding: 20px 20px;
+    background: #0f1035;
+    border-radius: 20px;
+    margin: 25px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.blogs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.blogs .card{
+    height: 150px;
+    width: 200px;
+    padding: 20px 20px;
+    background: #0f1035;
+    border-radius: 20px;
+    margin: 25px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.blogs button{
+    margin: 20px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.blogs button:hover{
+    background: #7fc7d9;
+    color: #0f1035;
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.card .button{
+    background-color: #dcf2f1;
+    color: #0f1035;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.card p{
+    color: white;
+}
+
+.card:hover{
+    filter: drop-shadow(4px 8px 10px rgba(0, 0, 0, 0.4));
+}
+
+.centerButton{
+    display: block;
+    margin: 0 auto;
+
+    background-color: #0f1035;
+    color: #dcf2f1;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 600;
+    padding: 13px 22px;
+    border-radius: 40px;
+    transition: .4s;
+}
+
+.centerButton:hover{
+    background-color: #365486;
+    cursor: pointer;
+    color: #dcf2f1;
+    filter: drop-shadow(0px 8px 6px rgba(0, 0, 0, 0.4));
+}
+
+footer {
+    text-align: center;
+    color: #dcf2f1;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    background-color: #0f1035;
+    padding: 10px 0;
+    z-index: 1; 
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #96bdff;
+    text-decoration: underline;
+}
+
+.meetTeam{
+    background: #7fc7d9;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+
+.teaminfo{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #7ec5d7;
+    
+}
+
+.teammain{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.teammain img{
+    padding: 15px;
+}
+
+.teamText p{
+    color: #0f1035;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.teamText h2{
+    margin-top: 0px;
+    color: #0f1035;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}

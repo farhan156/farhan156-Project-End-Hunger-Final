@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dcf2f1;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcf2f1;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Ensure navbar is above the gradient */
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #0f1035;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    color: #365486; 
+    font-weight: bold;
+}
+
+
+.navbar a:hover {
+    color: #365486;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 0px;
+    margin-right: 20px;
+    float: left;
+    border: 1px grey;
+}
+
+header {
+    background-color: #365486;
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.imgDescription {
+    display: flex;
+    align-items: center;
+    border: 1px solid #010101;
+    width: 1200px;
+    margin-bottom: 30px;    
+}
+
+.main {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.imgDescription , .subtopics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #032146;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top:10px ;
+}
+
+.subtopics{
+    background-color: #fff;
+    border: none;
+}
+
+
+.imgDescription img {
+    width: 200px;
+    height: auto; 
+}
+
+.imgDescription .description {
+    flex: 1;
+    margin-left:20px ;
+    margin-right:20px ;
+}
+
+
+
+footer {
+    text-align: center;
+    color: #dcf2f1;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    background-color: #0f1035;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #96bdff;
+    text-decoration: underline;
+}

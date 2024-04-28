@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcf2f1;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.1));
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #0f1035;
+    text-align: center;
+    padding: 20px 36px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    color: #365486;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #365486;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navbar img:hover{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 150px;
+    margin-left: 0px;
+    margin-right: 20px;
+    float: left;
+    border: 1px grey;
+}
+
+.content {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    background-color: #dcf2f1;
+}
+
+.introduction, .statistics, .causes {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.introduction h2, .statistics h2, .causes h2 {
+    color: #365486;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.introduction p, .statistics p, .causes p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.statistic, .cause {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+.statistic img, .cause img {
+    width: 45%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.statistic p, .cause p {
+    width: 45%;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    color: #dcf2f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #0f1035;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #96bdff;
+    text-decoration: underline;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.nametag{
+    display: none;
+}
+
+.causeHead{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.causes {
+    margin-top: 40px;
+}
+
+.cause {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center; 
+}
+
+.cause img {
+    width: 45%;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.cause p {
+    width: 55%; 
+    font-size: 16px;
+    line-height: 1.6;
+}

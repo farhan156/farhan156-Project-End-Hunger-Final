@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Hunger Survey</title>
+  <link rel="stylesheet" href="css/profile.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/ENDHunger vertical.png" alt="ENDHungerLogo">
+        </a>
+    </div>
+    <a href="index.html" >Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html">Shop</a>
+    <a href="profile.html" class="active">User Profile</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="sitemap.html">Sitemap</a>
+
+  </div>
+
+  <h1>ZeroHunger Advocate Profile</h1> <!-- Title of the page -->
+
+  <!-- Container to hold the prompts and responses -->
+  <div class="container">
+  
+    <!-- Steps -->
+    <div id="step-1" class="step">
+      <h2>Step 1: Personal Information</h2>
+      <h2>Question 1 </h2>
+      <div class="prompt">
+        <h3>Enter your Full Name:</h3>
+        <input type="text" class="response" id="response-1" required>
+        <!-- Buttons for navigation -->
+        
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+ 
+    <div id="step-1" class="step" style="display: none;">
+      <h2>Step 1: Personal Information</h2> 
+      <h2>Question 2 </h2> 
+      <div class="prompt">
+        <h3>Enter your Age:</h3>
+        <input type="number" class="response" id="response-2" required>
+        
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-1" class="step" style="display: none;">
+      <h2>Step 1: Personal Information</h2> 
+      <h2>Question 3 </h2> 
+      <div class="prompt">
+        <h3>Country , City:</h3>
+        <input type="text" class="response" id="response-3" required>
+        
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-1" class="step" style="display: none;">
+      <h2>Step 1: Personal Information</h2> 
+      <h2>Question 4 </h2> 
+      <div class="prompt">
+        <h3>Position:</h3>
+        <select id="response-4" class="response" required>
+          <option value="school_student">School Student</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+          <option value="working_professional">Working Professional</option>
+          <option value="other">Other</option>
+        </select>
+        
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-1" class="step" style="display: none;">
+      <h2>Step 1: Personal Information</h2> 
+      <h2>Question 5 </h2>   
+      <div class="prompt">
+        <h3>Enter your Email:</h3>
+        <input type="email" class="response" id="response-5" required>
+        
+        </div>
+        <div class="buttons">
+          <button onclick="skipStep()">Skip</button>
+          <button onclick="nextStep()">Next</button>
+        </div>
+      </div>
+
+    <div id="step-1" class="step" style="display: none;">
+      <h2>Step 1: Personal Information</h2> 
+      <h2>Question 6 </h2>   
+      <div class="prompt">
+        <h3>Contact Number: </h3>
+        <input type="tel" class="response" id="response-6" >
+        
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <!-- Container for output message -->
+    <div id="output-container-step-1" class="output-message-step1"></div>
+
+    <div id="step-2" class="step" style="display: none;">
+      <h2>Step 2: Awareness and Attitude</h2>
+      <h2>Question 1 </h2>
+      <div class="prompt">
+        <h3>How familiar are you with the issue of world hunger?</h3>
+        <input type="text" class="response" id="response-7">
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-2" class="step" style="display: none;">
+      <h2>Step 2: Awareness and Attitude</h2>
+      <h2>Question 2 </h2>
+      <div class="prompt">
+        <h3>On a scale of 1 to 10, how concerned are you about global hunger?</h3>
+        <input type="number" class="response" id="response-8" min="1" max="10" re>
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-2" class="step" style="display: none;">
+      <h2>Step 2: Awareness and Attitude</h2>
+      <h2>Question 3 </h2>  
+      <div class="prompt">
+        <h3>Rate your understanding of the causes of hunger (1 = Low, 5 = Moderate, 10 = High)</h3>
+        <input type="number" class="response" id="response-9" min="1" max="10">
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <!-- Container for output message -->
+    <div id="output-container-step-2" class="output-message-step2"></div>
+
+
+    <div id="step-3" class="step" style="display: none;">
+      <h2>Step 3: Involvement and Actions</h2>
+      <h2>Question 1</h2>
+      <div class="prompt">
+        <h3>Are you aware of any local initiatives or organizations working to combat hunger in your area?</h3>
+        <input type="text" class="response" id="response-10">
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-3" class="step" style="display: none;">
+      <h2>Step 3: Involvement and Actions</h2>
+      <h2>Question 2</h2>
+      <div class="prompt">
+        <h3>Have you ever contributed to or volunteered for any hunger relief efforts?</h3>
+        <input type="text" class="response" id="response-11">
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <div id="step-3" class="step" style="display: none;">
+      <h2>Step 3: Involvement and Actions</h2>
+      <h2>Question 3</h2>  
+      <div class="prompt">
+        <h3>Do you consider yourself to have a balanced diet? (Yes/No)</h3>
+        <select class="response" id="response-12">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+    <!-- Container for output message -->
+    <div id="output-container-step-3" class="output-message-step3"></div>
+
+    <div id="step-4" class="step" style="display: none;">
+      <h2>Step 4: Interest and Engagement</h2>
+      <h2>Question 1</h2>
+      <div class="prompt">
+        <h3>How conscious are you about minimizing food waste in your household?</h3>
+        <input type="text" class="response" id="response-13">
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+
+
+    <div id="step-4" class="step" style="display: none;">
+      <h2>Step 4: Interest and Engagement</h2>
+      <h2>Question 2</h2>
+      <div class="prompt">
+        <h3>Would you be interested in learning more about ways to support zero hunger initiatives? (Yes/No)</h3>
+        <select class="response" id="response-14">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+      <div class="buttons">
+        <button onclick="skipStep()">Skip</button>
+        <button onclick="nextStep()">Next</button>
+      </div>
+    </div>
+    
+    <!-- Container for output message -->
+    <div id="output-container-step-4" class="output-message-step4"></div>
+    
+
+      <!-- Progress bar -->
+      <div id="progress-bar">
+        <div id="progress"></div> <!-- Progress bar -->
+        <div id="progress-value">Step 1 of 4</div> <!-- Progress value display -->
+      </div>
+
+      <div id="user-inputs"></div>
+  
+
+    <!-- Container for output message -->
+    <div id="output-container" class="output-message"></div>
+    <button id="submit-button" onclick="submitSurvey()">Submit</button>
+    <div id="feedback-message" class="feedback-message"></div>
+    
+  </div>
+
+  <!-- JavaScript file -->
+  <script src="js/profile.js"></script>
+  <footer>Designed & Developed by <a href="editorChathuni.html">Chathuni Sooriyaarachchi</a></footer>
+</body>
+</html>

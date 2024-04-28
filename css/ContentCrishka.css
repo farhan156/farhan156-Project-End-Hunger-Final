@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif ;
+    
+}
+
+a{
+   text-decoration: none;
+  
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/img3blur.jpg");
+    
+    background-position:bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.header-content{
+    margin-bottom: 150px;
+    color:whitesmoke ;
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    padding-bottom: 100px;
+    padding-right: 200px;
+}
+    
+.header-content h2{
+    font-size: 12vmin;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.header-content h1{
+    font-size: 15vmin;
+    margin-top: 50px; 
+    margin-bottom: 30px;
+    font-family:'Poppins', sans-serif;
+    color:black;
+}
+
+
+section{
+    width: 80%;
+    margin: 80px auto;
+    background-color: #dcf2f1
+    
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+    display: table;
+}
+
+.col{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.content{
+    padding: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content h4 p{
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dcf2f1;
+  }
+  .image-wrapper {
+    flex: 1;
+  }
+  .text-wrapper {
+    flex: 1;
+    padding: 0 20px;
+  }
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 20px; /* Adjust as needed */
+    border-radius: 30px;
+    
+  }
+  .text-wrapper p {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .text-wrapper h1 {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+    
+  }
+  footer {
+    text-align: center;
+    color: #dcf2f1;
+    position: relative; /* Change position to fixed */
+    bottom: 0;
+    width: 100%;
+    background-color: #0f1035;
+    padding: 10px 0;
+    z-index: 1; /* Set a lower z-index value */
+}  
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #96bdff;
+    text-decoration: underline;
+}
+
+

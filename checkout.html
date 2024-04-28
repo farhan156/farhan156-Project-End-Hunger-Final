@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/checkout.css">
+  <script src="js/checkout.js"></script>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+        <a href="#">
+            <img src="images/ENDHungerVertical.png" alt="ENDHungerLogo">
+        </a>
+    </div>
+    <a href="index.html" class="active">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="shop.html" class="active">Shop</a>
+    <a href="profile.html">User Profile</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="sitemap.html">Sitemap</a>
+
+</div>
+
+  <div class="checkout">
+
+    <h1>Checkout Summary</h1>
+    <p id="totalDisplay"></p>
+
+
+    <form id="form">
+
+      <fieldset class="fieldset">
+
+        <legend>Contact Information</legend>
+
+        <div class="textContainer">
+
+        <label for="fname">First Name </label>
+        <input type="text" id="fname" name="name" required>
+
+        <label for="lname">Last Name </label>
+        <input type="text" id="lname" name="name" required>
+
+        </div>
+        
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email" required>
+
+        <label for ="number">Mobile Number</label>
+        <input type="text" name="number" id="number" required>
+        
+      </fieldset>
+
+      <fieldset class="fieldset" >
+               
+        <legend>Shipping Information</legend>
+
+        
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <div class="textContainer">
+
+          <label for="city">City </label>
+          <input type="text" id="city" name="city" required>
+  
+          <label for="pCode">Postal Code </label>
+          <input type="text" id="pCode" name="pCode" required>
+  
+          </div>
+
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Payment Information</legend>
+
+        <div>
+        <p>Select Your Card Type :</p>
+        <input type="radio" id="visa" name="card" value="visa" checked>
+        <label for="visa">Visa</label>
+        <input type="radio" id="master" name="card" value="master">
+        <label for="master">Master</label>
+        </div>
+
+        <label for ="number">Card Holder's Name</label>
+        <input type="text" name="cName" id="cName" required>
+
+        <label for ="cNo">Card Number</label>
+        <input type="text" name="cNo" id="cNo" required>
+
+        <div class="container">
+        <label for="exDate">Expiration Date (MM/YYYY)</label>
+        <input type="month" id="exDate" name="exDate" required>          
+        <label for ="cvv">CVV</label>
+        <input type="text" name="cvv" id="cvv" required>
+        </div>
+
+      </fieldset>
+      
+      <div class="Button">
+      <button type="submit" >Complete Purchase</button>
+      </div>
+      
+    </form>
+    <div id="message"></div>
+  </div>
+  
+
+  <footer>Designed & Developed by <a href="editorSulandi.html">Sulandi Edirisuriya</a></footer>
+
+</body>
+</html>
